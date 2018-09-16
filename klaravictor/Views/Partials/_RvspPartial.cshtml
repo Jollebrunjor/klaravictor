@@ -1,4 +1,6 @@
-﻿﻿<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(~/images/cover_bg_1.jpg);">
+﻿@model klaravictor.Models.RvspModel
+
+<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(~/images/cover_bg_1.jpg);">
     <div class="overlay"></div>
     <div class="container">
         <div class="row animate-box">
@@ -16,52 +18,48 @@
         </div>
         <div class="row animate-box">
             <div class="col-md-10 col-md-offset-1">
-                @using (Html.BeginForm("Rvsp", "Page", FormMethod.Post))
+                @using (Html.BeginForm("Index", "Page", FormMethod.Post))
                 {
                     <div class="col-md-6 form-line">
                         <div class="form-group">
                             <label for="exampleInputUsername">Anmälan</label>
-                            <input type="text" class="form-control" id="" placeholder="Ditt namn">
+                            @Html.TextBoxFor(m => m.Name, new {placeholder = "Ditt namn", @class = "form-control"})
                         </div>
                         <div class="form-group">
                             <label class="radio-inline">
-                                <input type="radio" name="optradio" checked>Jag kommer
+                                @Html.RadioButtonFor(m => m.Attending, true, new { name = "optradio"}) Jag kommer
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="optradio">Kan tyvärr inte komma
+                                < @Html.RadioButtonFor(m => m.Attending, false, new { name = "optradio" })Kan tyvärr inte komma
                             </label>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Din mail">
+                            @Html.TextBoxFor(m => m.Email, new {placeholder = "Din e-post", @class = "form-control"} )
                         </div>
                         <div class="form-group">
-                            <textarea style="width:100%; height:150px;" class="form-control" id="description" placeholder="Specialkost eller allergier?"></textarea>
+                            @Html.TextAreaFor(m => m.FoodInfo, new { style = "width: 100%; height: 150px;", @class="form-control", id="description", placeholder= "Specialkost eller allergier?" })
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="stay">Boende</label>
-                            <select name="stay" class="form-control">
-                                <option value="temp">Typ av boende</option>
-                                <option value="temp2">Familjestuga</option>
-                                <option value="temp3">Campingstuga</option>
-                                <option value="temp4">Friluftsbod</option>
-                                <option value="temp4">Eget boende</option>
-                            </select>
+                            @Html.DropDownListFor(m => m.Accommondation, new List<SelectListItem>
+                            { new SelectListItem{Text="Familjestuga", Value="Familjestuga"},
+                                new SelectListItem{Text="Campingstuga", Value="Campingstuga"},
+                                new SelectListItem{Text="Friluftsbod", Value="Friluftsbod"},
+                                new SelectListItem{Text="Eget boende", Value="Eget boende"}}, "Typ av boende", new { @class = "form-control" })
                         </div>
                         <div class="form-group">
-                            <select name="stay" class="form-control">
-                                <option value="temp">Antal nätter</option>
-                                <option value="temp2">1</option>
-                                <option value="temp3">2</option>
-                                <option value="temp4">3</option>
-                            </select>
+                            @Html.DropDownListFor(m => m.Accommondation, new List<SelectListItem>
+                            { new SelectListItem{Text="1", Value="1"},
+                                new SelectListItem{Text="2", Value="2"},
+                                new SelectListItem{Text="3", Value="3"}}, "Antal nätter", new { @class = "form-control" })
                         </div>
                         <div class="form-group">
-                            <textarea style="width:100%; height:150px;" class="form-control" id="description" placeholder="Kommentar / önskemål"></textarea>
+                            @Html.TextAreaFor(m => m.Comment, new { style = "width: 100%; height: 150px;", @class="form-control", id="description", placeholder="Kommentar / önskemål"})
                         </div>
                         <div>
-                            <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>OSA</button>
+                            <button type="submit" class="btn btn-default" value="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>OSA</button>
                         </div>
                     </div>
                 }
