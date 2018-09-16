@@ -1,0 +1,71 @@
+﻿﻿<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(~/images/cover_bg_1.jpg);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-12 text-center section-heading svg-sm colored">
+                    <img src="~/images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                    <h2>OSA</h2>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 subtext">
+                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row animate-box">
+            <div class="col-md-10 col-md-offset-1">
+                @using (Html.BeginForm("Rvsp", "Page", FormMethod.Post))
+                {
+                    <div class="col-md-6 form-line">
+                        <div class="form-group">
+                            <label for="exampleInputUsername">Anmälan</label>
+                            <input type="text" class="form-control" id="" placeholder="Ditt namn">
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-inline">
+                                <input type="radio" name="optradio" checked>Jag kommer
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="optradio">Kan tyvärr inte komma
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Din mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea style="width:100%; height:150px;" class="form-control" id="description" placeholder="Specialkost eller allergier?"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="stay">Boende</label>
+                            <select name="stay" class="form-control">
+                                <option value="temp">Typ av boende</option>
+                                <option value="temp2">Familjestuga</option>
+                                <option value="temp3">Campingstuga</option>
+                                <option value="temp4">Friluftsbod</option>
+                                <option value="temp4">Eget boende</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="stay" class="form-control">
+                                <option value="temp">Antal nätter</option>
+                                <option value="temp2">1</option>
+                                <option value="temp3">2</option>
+                                <option value="temp4">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea style="width:100%; height:150px;" class="form-control" id="description" placeholder="Kommentar / önskemål"></textarea>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>OSA</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
