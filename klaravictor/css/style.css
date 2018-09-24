@@ -759,7 +759,7 @@ h1, h2, h3, h4, h5, h6 {
 .couple .desc {
   z-index: 1;
 }
-.couple .desc h2 {
+.couple .desc h2, .social-circle h2 {
   color: #245632;
   font-size: 40px;
   margin-bottom: 30px;
@@ -1147,7 +1147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wedding-events .desc {
   padding: 2em;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(65, 86, 65);
   position: relative;
   z-index: 0;
 }
@@ -1538,7 +1538,7 @@ select option {
 }
 
 #footer {
-  padding: 50px 0;
+  padding: 10px 0;
   color: #7f7f7f;
 }
 #footer .copyright {

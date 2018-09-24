@@ -224,6 +224,9 @@
     <Content Include="images\groom-men-3.jpg" />
     <Content Include="images\groom-men-4.jpg" />
     <Content Include="images\groom.jpg" />
+    <Content Include="images\klaravictor.jpg" />
+    <Content Include="images\klaravictor2.jpg" />
+    <Content Include="images\skule.jpeg" />
     <Content Include="images\wed-ceremony.jpg" />
     <Content Include="images\wed-party.jpg" />
     <Content Include="js\bootstrap.min.js" />
@@ -266,6 +269,7 @@
     <Content Include="images\flaticon\.DS_Store" />
     <Content Include="images\flaticon\license\license.pdf" />
     <Content Include="images\flaticon\svg\.DS_Store" />
+    <Content Include="fonts\IcoMoon-Free.ttf" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\_RvspPartial.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
