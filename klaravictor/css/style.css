@@ -236,8 +236,8 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 .section-heading.svg-sm-2 .svg {
-  height: 150px;
-  margin-bottom: 0;
+  height: 180px;
+  margin-bottom: -70px;
   padding: 0;
 }
 .section-heading.svg-sm .svg {
@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #245632;
+  fill: #2c7440;
 }
 .section-heading h2 {
   font-size: 80px;
@@ -691,7 +691,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   z-index: -1;
   /*background: rgba(0, 0, 0, 0.4);*/
-  background: rgba(22, 45, 33, 1);
+  /*background: rgba(22, 45, 33, 1);*/
+  background: rgb(34, 74, 52);
 }
 
 /*#qbootstrap-groom-bride .overlay {
@@ -1666,11 +1667,11 @@ select option {
 }
 
 .row-bottom-padded-md {
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 @media screen and (max-width: 768px) {
   .row-bottom-padded-md {
-    padding-bottom: 2em;
+    padding-bottom: 0;
   }
 }
 
