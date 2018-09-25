@@ -180,7 +180,9 @@
     <Content Include="css\simple-line-icons.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\icomoon\icomoon.svg" />
+    <Content Include="fonts\simple-line-icons\Simple-Line-Icons.svg" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -259,17 +261,25 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\style.css.map" />
     <Content Include="images\.DS_Store" />
     <Content Include="images\flaticon\.DS_Store" />
     <Content Include="images\flaticon\license\license.pdf" />
     <Content Include="images\flaticon\svg\.DS_Store" />
-    <Content Include="fonts\IcoMoon-Free.ttf" />
+    <Content Include="fonts\.DS_Store" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\icomoon\.DS_Store" />
+    <Content Include="fonts\icomoon\icomoon.eot" />
+    <Content Include="fonts\icomoon\icomoon.ttf" />
+    <Content Include="fonts\icomoon\icomoon.woff" />
+    <Content Include="fonts\simple-line-icons\Simple-Line-Icons.eot" />
+    <Content Include="fonts\simple-line-icons\Simple-Line-Icons.ttf" />
+    <Content Include="fonts\simple-line-icons\Simple-Line-Icons.woff" />
+    <Content Include="fonts\simple-line-icons\Simple-Line-Icons.woff2" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\_RvspPartial.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
