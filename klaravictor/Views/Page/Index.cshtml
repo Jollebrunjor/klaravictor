@@ -1,6 +1,4 @@
-﻿@Html.Partial("~/Views/Partials/_RvspPartial.cshtml");
-
-<div id="qbootstrap-couple" class="qbootstrap-section-gray">
+﻿<div id="qbootstrap-couple" class="qbootstrap-section-gray">
     <div class="container">
         <div class="row animate-box">
             <div class="col-md-8 col-md-offset-2 animate-box">
@@ -30,30 +28,8 @@
     </div>
 </div>
 
-<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(~/images/cover_bg_2.jpg);" data-section="wedding-day">
-    <div class="overlay"></div>
-    <div class="display-over">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-12 section-heading text-center svg-sm colored">
-                    <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
-                    <h2 class="">Bröllopsdagen</h2>
-                    <span class="datewed">Lördag den 29e Juni, 2019</span>
-                </div>
-            </div>
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <p class="countdown">
-                        <span id="days"></span>
-                        <span id="hours"></span>
-                        <span id="minutes"></span>
-                        <span id="seconds"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@Html.Partial("~/Views/Partials/_RvspPartial.cshtml")
+
 
 @*<div id="qbootstrap-groom-bride" data-section="groom-bride">
         <div class="container">
@@ -399,6 +375,31 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="map" class="qbootstrap-map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(~/images/cover_bg_2.jpg);" data-section="wedding-day">
+    <div class="overlay"></div>
+    <div class="display-over">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-12 section-heading text-center svg-sm colored">
+                    <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+                    <h2 class="">Bröllopsdagen</h2>
+                    <span class="datewed">Lördag den 29e Juni, 2019</span>
+                </div>
+            </div>
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <p class="countdown">
+                        <span id="days"></span>
+                        <span id="hours"></span>
+                        <span id="minutes"></span>
+                        <span id="seconds"></span>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
