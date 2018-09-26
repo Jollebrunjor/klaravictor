@@ -10,32 +10,32 @@
 </head>
 <body>
 <table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Namn</th>
+        <th>E-post</th>
+        <th>Kommer</th>
+        <th>Matinfo</th>
+        <th>Boende</th>
+        <th>Antal nätter</th>
+        <th>Kommentar</th>
+    </tr>
+    </thead>
     @foreach (var m in Model)
     {
-            <thead>
-            <tr>
-                <th>Namn</th>
-                <th>E-post</th>
-                <th>Kommer</th>
-                <th>Matinfo</th>
-                <th>Boende</th>
-                <th>Antal nätter</th>
-                <th>Kommentar</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>@m.Name</td>
-                <td>@m.Email</td>
-                <td>@m.Attending</td>
-                <td>@m.FoodInfo</td>
-                <td>@m.Accommondation</td>
-                <td>@m.NumberOfNights</td>
-                <td>@m.Comment</td>
-            </tr>
-            </tbody>
+        <tbody>
+        <tr>
+            <td>@m.Name</td>
+            <td>@m.Email</td>
+            <td>@m.Attending</td>
+            <td>@m.FoodInfo</td>
+            <td>@m.Accommondation</td>
+            <td>@m.NumberOfNights</td>
+            <td>@m.Comment</td>
+        </tr>
+        </tbody>
     }
-    </table>
+</table>
     <div>
     </div>
 </body>
