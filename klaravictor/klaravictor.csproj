@@ -283,6 +283,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Partials\_RvspPartial.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\klaravictor - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
