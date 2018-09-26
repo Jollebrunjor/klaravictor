@@ -456,7 +456,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #qbootstrap-slider-hero {
   min-height: 800px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
 }
 #qbootstrap-slider-hero .flexslider {
   border: none;

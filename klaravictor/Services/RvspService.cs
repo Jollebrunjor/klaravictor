@@ -21,11 +21,16 @@ namespace klaravictor.Services
         {
             if (rvsp == null) return false;
 
-            _db.RvspResponses.Add(rvsp);
-            _db.SaveChanges();
-
+            try
+            {
+                _db.RvspResponses.Add(rvsp);
+                _db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
             _smtp.SendMail(rvsp.Email);
-
             return true;
 
         }
@@ -33,9 +38,16 @@ namespace klaravictor.Services
         {
             RvspModel removable = _db.RvspResponses.FirstOrDefault(x => x.RvspId == rvsp.RvspId);
             if (removable == null) return false;
-                
-            _db.RvspResponses.Remove(removable);              
-            _db.SaveChanges();
+
+            try
+            {
+                _db.RvspResponses.Remove(removable);
+                _db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
             
             return true;
         }
