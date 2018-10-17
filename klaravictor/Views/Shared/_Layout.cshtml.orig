@@ -90,8 +90,11 @@
                                     <div class="container">
                                         <div class="col-md-10 col-md-offset-1">
                                             <div class="animate-box svg-sm colored">
+<<<<<<< HEAD
                                                 <img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="">
+=======
                                                 @*<img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">*@
+>>>>>>> Added text
                                                 <h1 class="holder"><span>Bröllop</span>
                                                 </h1>
                                                 <h2>Klara &amp; Victor</h2>
@@ -113,7 +116,11 @@
                                     <div class="container">
                                         <div class="col-md-10 col-md-offset-1">
                                             <div class="animate-box svg-sm colored">
-                                                @*<img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="">*@
+<<<<<<< HEAD
+                                                <img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="">
+=======
+                                                @*<img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">*@
+>>>>>>> Added text
                                                 <h1 class="holder"><span>Bröllop</span></h1>
                                                 <h2>Klara &amp; Victor</h2>
                                                 <p>29 Juni, 2019</p>
@@ -134,7 +141,11 @@
                                     <div class="container">
                                         <div class="col-md-10 col-md-offset-1">
                                             <div class="animate-box svg-sm colored">
-                                                @*<img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="">*@
+<<<<<<< HEAD
+                                                <img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="">
+=======
+                                                @*<img src="~/images/flaticon/svg/004-nature.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">*@
+>>>>>>> Added text
                                                 <h1 class="holder"><span>Bröllop</span></h1>
                                                 <h2>Klara &amp; Victor</h2>
                                                 <p>29 Juni, 2019</p>

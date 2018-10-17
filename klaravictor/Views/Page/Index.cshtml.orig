@@ -541,6 +541,16 @@ Som ni ser är boendet som FriluftsByn erbjuder väldigt mysigt men också väld
     </div>
 </div>
 
+<<<<<<< HEAD
+<div id="qbootstrap-groom-bride" data-section="kontakt">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-12 text-center section-heading svg-sm-2 colored">
+                    <img src="~/images/flaticon/svg/005-two.svg" class="svg" alt="">
+                    <h2>Kontakt</h2>
+                    <p>Vid funderingar kontakta kvällens toastmasters</p>
+=======
     <div id="qbootstrap-groom-bride" data-section="kontakt">
         <div class="container">
             <div class="row animate-box">
@@ -557,6 +567,7 @@ Som ni ser är boendet som FriluftsByn erbjuder väldigt mysigt men också väld
                         <p>klaragrahm@gmail.com</p>
                         <p>Vill ni hålla tal eller göra något annat spexigt under middagen? Ta kontakt med vårt eminenta toastmasterpar.</p>
                     </div>
+>>>>>>> Added text
                 </div>
             </div>
             <div class="row">
