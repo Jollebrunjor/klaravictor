@@ -14,11 +14,6 @@
                             {
                                 <span>@TempData["rvsp"]</span>
                             }
-                            else
-                            {
-                                <span>Glöm inte bort att OSA. Senast idag men gärna tidigare än så!</span>
-                            }
-
                         </div>
                     </div>
                 </div>
@@ -28,43 +23,52 @@
             <div class="col-md-10 col-md-offset-1">
                 @using (Html.BeginForm("Index", "Page", FormMethod.Post))
                 {
-                    <div class="col-md-6 form-line">
+                    <div class="col-md-6">
+                        <h2 for="user">Anmälan</h2>
                         <div class="form-group">
-                            <label for="exampleInputUsername">Anmälan</label>
-                            @Html.TextBoxFor(m => m.Name, new { placeholder = "Ditt namn", @class = "form-control", @required = true })
+                            @Html.TextBoxFor(m => m.Name, new {placeholder = "Ditt namn", @class = "form-control", @required = true})
                         </div>
                         <div class="form-group">
                             <label class="radio-inline">
-                                @Html.RadioButtonFor(m => m.Attending, true, new { name = "optradio", @required = true }) Jag kommer
+                            <div style="color: white">@Html.RadioButtonFor(m => m.Attending, true, new {name = "optradio", @required = true}) 
+                                Jag kommer
+                                </div>
                             </label>
                             <label class="radio-inline">
-                                @Html.RadioButtonFor(m => m.Attending, false, new { name = "optradio", @required = true })Kan tyvärr inte komma
+                                <div style="color: white"> 
+                                    @Html.RadioButtonFor(m => m.Attending, false, new {name = "optradio", @required = true})
+                                    Kan tyvärr inte komma
+                                </div>
                             </label>
                         </div>
                         <div class="form-group">
-                            @Html.TextBoxFor(m => m.Email, new { placeholder = "Din e-post", @class = "form-control", @required = true })
+                            @Html.TextBoxFor(m => m.Email, new {placeholder = "Din e-post", @class = "form-control", @required = true})
                         </div>
                         <div class="form-group">
-                            @Html.TextAreaFor(m => m.FoodInfo, new { style = "width: 100%; height: 150px;", @class = "form-control", id = "description", placeholder = "Specialkost eller allergier?" })
+                            @Html.TextAreaFor(m => m.FoodInfo, new {style = "width: 100%; height: 150px;", @class = "form-control", id = "description", placeholder = "Specialkost eller allergier?"})
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <h2 for="stay">Boende</h2>
                         <div class="form-group">
-                            <label for="stay">Boende</label>
                             @Html.DropDownListFor(m => m.Accommondation, new List<SelectListItem>
-                            { new SelectListItem{Text="Familjestuga", Value="Familjestuga"},
-                                new SelectListItem{Text="Campingstuga", Value="Campingstuga"},
-                                new SelectListItem{Text="Friluftsbod", Value="Friluftsbod"},
-                                new SelectListItem{Text="Eget boende", Value="Eget boende"}}, "Typ av boende", new { @class = "form-control", @required = true })
+                            {
+                                new SelectListItem {Text = "Familjestuga", Value = "Familjestuga"},
+                                new SelectListItem {Text = "Campingstuga", Value = "Campingstuga"},
+                                new SelectListItem {Text = "Friluftsbod", Value = "Friluftsbod"},
+                                new SelectListItem {Text = "Eget boende", Value = "Eget boende"}
+                            }, "Typ av boende", new {@class = "form-control", @required = true})
                         </div>
                         <div class="form-group">
                             @Html.DropDownListFor(m => m.NumberOfNights, new List<SelectListItem>
-                            { new SelectListItem{Text="1", Value="1"},
-                                new SelectListItem{Text="2", Value="2"},
-                                new SelectListItem{Text="3", Value="3"}}, "Antal nätter", new { @class = "form-control", @required = true })
+                            {
+                                new SelectListItem {Text = "1", Value = "1"},
+                                new SelectListItem {Text = "2", Value = "2"},
+                                new SelectListItem {Text = "3", Value = "3"}
+                            }, "Antal nätter", new {@class = "form-control", @required = true})
                         </div>
                         <div class="form-group">
-                            @Html.TextAreaFor(m => m.Comment, new { style = "width: 100%; height: 150px;", @class = "form-control", id = "description", placeholder = "Kommentar / önskemål" })
+                            @Html.TextAreaFor(m => m.Comment, new {style = "width: 100%; height: 150px;", @class = "form-control", id = "description", placeholder = "Om du har önskemål att dela boende med annan gäst, ange det här..." })
                         </div>
                         <div>
                             <button type="submit" class="btn btn-default" value="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>OSA</button>
