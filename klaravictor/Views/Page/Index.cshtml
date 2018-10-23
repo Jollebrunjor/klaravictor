@@ -24,12 +24,13 @@
             <div class="row animate-box">
                 <div class="col-md-6 section-heading text-center svg-sm colored">
                     <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
-                    <h2 class="">Vi gifter oss</h2>
-                    <p style="color:white">
+                    <h2>Vi gifter oss</h2>
+                    <p>
                         Hej och välkommen till vår bröllopssida.
-                    Vi skulle bli så glada om just du vill komma och fira med oss</p>
+                        Vi skulle bli så glada om just du vill komma och fira med oss
+                    </p>
                     <p>Hemsidan kommer att uppdateras med mer detaljer när det närmar sig.</p>
-                    <p style="color:white">
+                    <p>
                         <strong>den 29 Juni, 2019 &mdash; Skuleberget, Örnsköldsvik</strong>
                     </p>
                 </div>
@@ -83,9 +84,6 @@
                             Mingel efter vigseln
                             Efter vigseln kommer vi röra oss mot festlokalen som ligger ca 700 m från liftstationen.
                         </p>
-                        @*<p>
-                                <a href="#" class="btn btn-primary btn-sm">Learn more</a>
-                            </p>*@
                     </div>
                 </div>
             </div>
@@ -102,7 +100,7 @@
                             </div>
                             <div class="col-md-5 col-md-pull-1">
                                 <div class="date">
-                                    <i class="icon-calendar"></i>
+                                    <i class="icon-calendar hidden-xs"></i>
                                     <span>Saturday</span>
                                     <span>29 Jun. 2019</span>
                                 </div>
@@ -216,29 +214,6 @@
     @Html.Partial("~/Views/Partials/_RvspPartial.cshtml")
 </div>
 
-<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(../../images/cover_bg_2.jpg);" data-section="wedding-day">
-    <div class="overlay"></div>
-    <div class="display-over">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-6 section-heading text-center svg-sm colored">
-                    <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
-                    <h2 class="">Bröllopsdagen</h2>
-                    <span class="datewed">Lördag den 29e Juni, 2019</span>
-                </div>
-            </div>
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <p class="countdown">
-                        <span id="days"></span>
-                        <span id="hours"></span>
-                        <span id="minutes"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div id="qbootstrap-findyourway" data-stellar-background-ratio="0.5" style="background-image: url(../../images/cover_bg_2.jpg);" data-section="find-your-way">
     <div class="overlay"></div>
     <div class="display-over">
@@ -289,18 +264,18 @@
     </div>
 </div>
 @*<div id="qbootstrap-wishlist" class="qbootstrap-section-gray" data-section="wishlist">
-    <div class="container">
-        <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 animate-box">
-                <div class="col-md-12 text-center section-heading svg-sm colored">
-                    <img src="~/images/flaticon/svg/005-two.svg" class="svg" alt="">
-                    <h2>Önskelista</h2>
-                    <p>Den bästa presenten är att ni närvarar på vår dag. Men om ni ändå vill ge något litet, önskar vi oss främst bidrag till bröllopsresan (Länsförsäkringar; 9024 72 699 66)</p>
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 animate-box">
+                    <div class="col-md-12 text-center section-heading svg-sm colored">
+                        <img src="~/images/flaticon/svg/005-two.svg" class="svg" alt="">
+                        <h2>Önskelista</h2>
+                        <p>Den bästa presenten är att ni närvarar på vår dag. Men om ni ändå vill ge något litet, önskar vi oss främst bidrag till bröllopsresan (Länsförsäkringar; 9024 72 699 66)</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>*@
+    </div>*@
 
 
 <div id="qbootstrap-groom-bride" data-section="kontakt">
@@ -362,3 +337,50 @@
         </div>
     </div>
 </div>
+@*--------------Liten countdown-------------*@
+@*<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(../../images/cover_bg_2.jpg);" data-section="wedding-day">
+    <div class="overlay"></div>
+    <div class="display-over">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-6 section-heading text-center svg-sm colored">
+                    <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
+                    <h2 class="">Bröllopsdagen</h2>
+                    <span class="datewed">Lördag den 29e Juni, 2019</span>
+                </div>
+                <div class="col-md-6 text-center">
+                    <p class="countdown">
+                        <span id="days"></span>
+                        <span id="hours"></span>
+                        <span id="minutes"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+@*------------stor countdown-------------*@
+@*<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(../../images/cover_bg_2.jpg);" data-section="wedding-day">
+        <div class="overlay"></div>
+        <div class="display-over">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-6 section-heading text-center svg-sm colored">
+                        <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
+                        <h2 class="">Bröllopsdagen</h2>
+                        <span class="datewed">Lördag den 29e Juni, 2019</span>
+                    </div>
+                </div>
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <p class="countdown">
+                            <span id="days"></span>
+                            <span id="hours"></span>
+                            <span id="minutes"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+

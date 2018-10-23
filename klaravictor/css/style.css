@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
         fill: #2c7440;
     }
 
-    .section-heading h2 {
+    .section-heading h2, footer .social h2 {
         font-size: 80px;
         color: #245632;
         display: block;
@@ -326,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
 #qbootstrap-press {
-    padding: 7em 0;
+    padding: 3em 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
     #qbootstrap-gallery,
     #qbootstrap-testimonials,
     #qbootstrap-press {
-        padding: 5em 0;
+        padding: 1em 0;
     }
 }
 
@@ -761,13 +761,13 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0 !important;
     }
 
-        #qbootstrap-countdown .section-heading h2, #qbootstrap-countdown2 .section-heading h2, #qbootstrap-wishlist .section-heading h2 {
+        #qbootstrap-countdown .section-heading h2, #qbootstrap-countdown2 .section-heading h2, #qbootstrap-wishlist .section-heading h2, footer .social h2 {
             color: #fff;
         }
 
 @media screen and (max-width: 768px) {
-    #qbootstrap-countdown .section-heading h2, #qbootstrap-countdown2 .section-heading h2, #qbootstrap-wishlist .section-heading h2 {
-        font-size: 30px;
+    #qbootstrap-countdown .section-heading h2, #qbootstrap-countdown2 .section-heading h2, #qbootstrap-wishlist .section-heading h2, footer .social h2 {
+        font-size: 50px;
     }
 }
 
@@ -826,7 +826,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #qbootstrap-countdown .countdown {
     margin-bottom: 0;
-    font-size: 80px;
+    font-size: 70px;
     color: #fff;
 }
 
@@ -1159,7 +1159,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
     #qbootstrap-testimonials .section-heading h2 {
-        font-size: 30px;
+        font-size: 50px;
     }
 }
 
@@ -1971,7 +1971,7 @@ select option {
         color: white;
     }
 
-.subtext span {
+.subtext span, #qbootstrap-wishlist .section-heading p, #qbootstrap-countdown2 .section-heading p {
     color: white;
 }
 
@@ -1979,7 +1979,19 @@ select option {
         margin-bottom: 60px;
 }
 
-#rsvp label {
+#rsvp .form-group label {
     color: white;
+}
+@media screen and (min-width: 768px) {
+    .col-md-6 .wedding-events .desc {
+        height: 513px;
+    }
+
+    .col-md-4 .wedding-events .desc {
+        height: 443px;
+    }
+}
+#qbootstrap-countdown .section-heading {
+    width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

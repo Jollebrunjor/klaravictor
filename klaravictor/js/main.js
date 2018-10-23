@@ -252,7 +252,7 @@
 	
 
 	// Set the date we're counting down to
-		var countDownDate = new Date("Jun 29, 2019 15:37:25").getTime();
+		var countDownDate = new Date("Jun 29, 2019 15:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -274,9 +274,9 @@
 		// + minutes + "Minutes " + seconds + "Seconds ";
 
 		// Display the result in an element with id="demo"
-		document.getElementById("days").innerHTML = days +" <small>days</small>";
-		document.getElementById("hours").innerHTML = hours + " <small>hours</small> ";
-		document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
+		document.getElementById("days").innerHTML = days +" <small>dagar</small>";
+		document.getElementById("hours").innerHTML = hours + " <small>timmar</small> ";
+		document.getElementById("minutes").innerHTML = minutes + " <small>minuter</small> ";
 		document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
 
 		// If the count down is finished, write some text 
