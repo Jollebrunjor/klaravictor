@@ -1998,6 +1998,11 @@ select option {
         height: 443px;
     }
 }
+@media screen and (max-width: 480px) {
+    .boxmargintop {
+        margin-top: 150px;
+    }
+}
 #qbootstrap-countdown .section-heading {
     width: 50%;
 }
