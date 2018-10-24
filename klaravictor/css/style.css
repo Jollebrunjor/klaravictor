@@ -13,7 +13,6 @@
 * ======================================================= */
 #map {
     height: 100%;
-
 }
 /* Optional: Makes the sample page fill the window. */
 
@@ -329,12 +328,17 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-people,
 #qbootstrap-when-where,
 #qbootstrap-findyourway,
-#qbootstrap-started,
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
 #qbootstrap-press {
     padding: 3em 0;
 }
+
+#qbootstrap-started {
+    padding: 3em 0;
+    padding-bottom: 6em;
+}
+
 
 @media screen and (max-width: 480px) {
     #qbootstrap-couple,
@@ -351,6 +355,10 @@ h1, h2, h3, h4, h5, h6 {
     #qbootstrap-testimonials,
     #qbootstrap-press {
         padding: 1em 0;
+    }
+
+    #qbootstrap-started {
+        padding-bottom: 4em;
     }
 }
 
@@ -756,7 +764,7 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
 }
 
-#qbootstrap-countdown, #qbootstrap-countdown2,  #qbootstrap-wishlist{
+#qbootstrap-countdown, #qbootstrap-countdown2, #qbootstrap-wishlist {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -764,7 +772,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-    #qbootstrap-countdown .section-heading, #qbootstrap-countdown2 .section-heading , #qbootstrap-wishlist .section-heading {
+    #qbootstrap-countdown .section-heading, #qbootstrap-countdown2 .section-heading, #qbootstrap-wishlist .section-heading {
         margin-bottom: 0 !important;
     }
 
@@ -783,17 +791,17 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.7);
 }
 
-#qbootstrap-countdown .section-heading.svg-sm .svg, #qbootstrap-countdown2 .section-heading.svg-sm .svg , #qbootstrap-wishlist .section-heading.svg-sm .svg{
+#qbootstrap-countdown .section-heading.svg-sm .svg, #qbootstrap-countdown2 .section-heading.svg-sm .svg, #qbootstrap-wishlist .section-heading.svg-sm .svg {
     height: 180px;
     margin-bottom: -50px;
     padding: 0;
 }
 
-#qbootstrap-countdown .section-heading.colored .svg, #qbootstrap-countdown2 .section-heading.colored .svg,  #qbootstrap-wishlist .section-heading.colored .svg {
+#qbootstrap-countdown .section-heading.colored .svg, #qbootstrap-countdown2 .section-heading.colored .svg, #qbootstrap-wishlist .section-heading.colored .svg {
     fill: #fff;
 }
 
-#qbootstrap-countdown .overlay, #qbootstrap-countdown2 .overlay , #qbootstrap-wishlist .overlay {
+#qbootstrap-countdown .overlay, #qbootstrap-countdown2 .overlay, #qbootstrap-wishlist .overlay {
     position: absolute !important;
     width: 100%;
     top: 0;
@@ -805,6 +813,7 @@ h1, h2, h3, h4, h5, h6 {
     /*background: rgba(22, 45, 33, 1);*/
     background: rgb(34, 74, 52);
 }
+
 #qbootstrap-wishlist .overlay {
     position: absolute !important;
     width: 100%;
@@ -1983,12 +1992,13 @@ select option {
 }
 
 .boxmargin {
-        margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 #rsvp .form-group label {
     color: white;
 }
+
 @media screen and (min-width: 768px) {
     .col-md-6 .wedding-events .desc {
         height: 513px;
@@ -1998,11 +2008,13 @@ select option {
         height: 443px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .boxmargintop {
         margin-top: 150px;
     }
 }
+
 #qbootstrap-countdown .section-heading {
     width: 50%;
 }
