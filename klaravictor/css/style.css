@@ -294,6 +294,16 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 1.5;
     }
 
+footer .social h2 {
+    font-family: "Clicker Script";
+    font-size: 70px;
+    color: #245632;
+    padding-bottom: 0;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .section-heading h2 {
         font-size: 50px;
@@ -339,6 +349,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 6em;
 }
 
+#qbootstrap-countdown {
+    padding-bottom: 0;
+}
 
 @media screen and (max-width: 480px) {
     #qbootstrap-couple,
@@ -1796,7 +1809,6 @@ select option {
     }
 
 #footer {
-    padding: 10px 0;
     color: #7f7f7f;
 }
 
