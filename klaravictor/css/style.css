@@ -365,12 +365,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .qbootstrap-cover,
     .qbootstrap-hero {
         height: 700px;
     }
-}
+}*/
 
 .qbootstrap-overlay {
     position: absolute !important;
@@ -2006,4 +2006,12 @@ select option {
 #qbootstrap-countdown .section-heading {
     width: 50%;
 }
+/*@media screen and (max-width: 480px) {
+    #qbootstrap-slider-hero {
+        height: auto;
+    }
+    .qbootstrap-hero, .qbootstrap-cover {
+        min-height: 0;        
+    }
+}*/
 /*# sourceMappingURL=style.css.map */
