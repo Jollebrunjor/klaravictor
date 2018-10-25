@@ -1,24 +1,28 @@
 ﻿using System;
 using System.Net;
 using System.Net.Mail;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace klaravictor.Services
 {
     public class SmtpService : ISmtpService
     {
-        public bool SendMail(string mailto)
+        public bool SendMail(string mailto, string user)
         {
             try
             {
-                //  1.Login to your gmail account.
-                // 2.Visit this page https://accounts.google.com/DisplayUnlockCaptcha and click on button to allow access.
-                //3.Visit this page https://www.google.com/settings/security/lesssecureapps and enable access for less secure apps.
-                var client = new SmtpClient("smtp.gmail.com", 587)
+                var apiKey = "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";
+                var client = new SendGridClient(apiKey);
+                var msg = new SendGridMessage()
                 {
-                    Credentials = new NetworkCredential("klaravictor@gmail.com", "password"),
-                    EnableSsl = true
+                    From = new EmailAddress("info@klaravictor.se", "Klara och Victor"),
+                    Subject = "Bröllopsbekräftelse!",
+                    PlainTextContent = $"Hej hej {user} du är anmäld!",
+                    HtmlContent = "<strong>Hello, Email!</strong>"
                 };
-                client.Send("joakim.wagstrom@gmail.com", mailto, "test", "testbody");
+                msg.AddTo(new EmailAddress(mailto, user));
+               client.SendEmailAsync(msg);
 
                 return true;
             }

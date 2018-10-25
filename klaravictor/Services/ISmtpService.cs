@@ -2,6 +2,6 @@
 {
     public interface ISmtpService
     {
-        bool SendMail(string mailto);
+        bool SendMail(string mailto, string user);
     }
 }
