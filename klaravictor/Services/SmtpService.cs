@@ -12,14 +12,13 @@ namespace klaravictor.Services
         {
             try
             {
-                var apiKey = "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";
+                var apiKey = System.Environment.GetEnvironmentVariable("SMTP_KEY");
                 var client = new SendGridClient(apiKey);
                 var msg = new SendGridMessage()
                 {
                     From = new EmailAddress("info@klaravictor.se", "Klara och Victor"),
                     Subject = "Bröllopsbekräftelse!",
                     PlainTextContent = $"Hej hej {user} du är anmäld!",
-                    
                 };
                 msg.AddTo(new EmailAddress(mailto, user));
                client.SendEmailAsync(msg);
