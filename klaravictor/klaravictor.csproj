@@ -291,6 +291,11 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <None Include="Properties\PublishProfiles\klaravictor - Web Deploy.pubxml" />
     <Content Include="Views\Partials\_IntroPartial.cshtml" />
+    <Content Include="Views\Partials\_AccommodationInfoPartial.cshtml" />
+    <Content Include="Views\Partials\_MapsPartial.cshtml" />
+    <Content Include="Views\Partials\_WishlistPartial.cshtml" />
+    <Content Include="Views\Partials\_ContactPartial.cshtml" />
+    <Content Include="Views\Partials\_WeddingInfoPartial.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

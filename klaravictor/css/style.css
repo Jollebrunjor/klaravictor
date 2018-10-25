@@ -333,7 +333,6 @@ footer .social h2 {
 #qbootstrap-countdown,
 #qbootstrap-countdown2,
 #qbootstrap-wishlist,
-#qbootstrap-groom-bride,
 #qbootstrap-story,
 #qbootstrap-people,
 #qbootstrap-when-where,
@@ -344,6 +343,9 @@ footer .social h2 {
     padding: 3em 0;
 }
 
+#qbootstrap-groom-bride {
+    padding: 5em 0;
+}
 #qbootstrap-started {
     padding: 3em 0;
     padding-bottom: 6em;
@@ -2011,7 +2013,7 @@ select option {
     color: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 770px) {
     .col-md-6 .wedding-events .desc {
         height: 513px;
     }
