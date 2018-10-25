@@ -19,7 +19,7 @@ namespace klaravictor.Services
                     From = new EmailAddress("info@klaravictor.se", "Klara och Victor"),
                     Subject = "Bröllopsbekräftelse!",
                     PlainTextContent = $"Hej hej {user} du är anmäld!",
-                    HtmlContent = "<strong>Hello, Email!</strong>"
+                    
                 };
                 msg.AddTo(new EmailAddress(mailto, user));
                client.SendEmailAsync(msg);
