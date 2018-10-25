@@ -2025,11 +2025,16 @@ select option {
     .boxmargintop {
         margin-top: 150px;
     }
+    .mobile-padding {
+        padding-top: 50px;
+}
 }
 
 #qbootstrap-countdown .section-heading {
     width: 50%;
 }
+
+
 /*@media screen and (max-width: 480px) {
     #qbootstrap-slider-hero {
         height: auto;

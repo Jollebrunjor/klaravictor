@@ -1,43 +1,5 @@
-﻿@*<div id="qbootstrap-couple" class="qbootstrap-section-gray">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2 animate-box">
-                    <div class="col-md-12 text-center section-heading svg-sm colored">
-                        <img src="~/images/flaticon/svg/005-two.svg" class="svg" alt="">
-                        <h2>Vi gifter oss</h2>
-                        <p>
-                            Hej och välkommen till vår bröllopssida.
-                            Vi skulle bli så glada om just du vill komma och fira med oss
-                            Hemsidan kommer att uppdateras med mer detaljer när det närmar sig.
-                        </p>
-                        <p><strong>den 29 Juni, 2019 &mdash; Skuleberget, Örnsköldsvik</strong>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>*@
-<div id="qbootstrap-countdown2" data-stellar-background-ratio="0.5" style="background-image: url(../../images/cover_bg_2.jpg);" data-section="wedding-day">
-    <div class="overlay"></div>
-    <div class="display-over">
-        <div class="container">
-            <div class="row animate-box">
-                <div class="col-md-6 section-heading text-center svg-sm colored">
-                    <img src="~/images/flaticon/svg/006-flower-bell-outline-design-variant-with-vines-and-leaves.svg" class="svg" alt="">
-                    <h2>Vi gifter oss</h2>
-                    <p>
-                        Hej och välkommen till vår bröllopssida.
-                        Vi skulle bli så glada om just du vill komma och fira med oss
-                    </p>
-                    <p>Hemsidan kommer att uppdateras med mer detaljer när det närmar sig.</p>
-                    @*<p>
-                        <strong>den 29 Juni, 2019 &mdash; Skuleberget, Örnsköldsvik</strong>
-                    </p>*@
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+﻿@Html.Partial("~/Views/Partials/_IntroPartial.cshtml")
+
 <div id="qbootstrap-when-where" data-section="when-where">
     <div class="container">
         <div class="row animate-box">
@@ -65,9 +27,9 @@
                                     <span class="icon"><i class="icon-heart-o"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-md-pull-1">
+                            <div class="col-md-5 col-md-pull-1 mobile-padding">
                                 <div class="date">
-                                    <i class="icon-calendar"></i>
+                                    <i class="icon-calendar hidden-xs"></i>
                                     <span>Lördag</span>
                                     <span>29 Jun. 2019</span>
                                 </div>
@@ -98,7 +60,7 @@
                                     <span class="icon"><i class="icon-heart-o"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-5 col-md-pull-1">
+                            <div class="col-md-5 col-md-pull-1 mobile-padding">
                                 <div class="date">
                                     <i class="icon-calendar hidden-xs"></i>
                                     <span>Saturday</span>
