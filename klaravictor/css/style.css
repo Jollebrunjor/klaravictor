@@ -1863,15 +1863,15 @@ select option {
         margin: 0;
         display: inline-block;
     }
+@media screen and (min-width: 550px) {
+    .leftitem {
+        padding-right: 50px;
+    }
 
-.leftitem {
-    padding-right: 50px;
+    .rightitem {
+        padding-left: 50px;
+    }
 }
-
-.rightitem {
-    padding-left: 50px;
-}
-
 .social li a {
     font-size: 16px;
     /*display: table;*/
