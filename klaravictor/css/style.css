@@ -2031,7 +2031,15 @@ select option {
         padding-top: 50px;
 }
 }
+@media screen and (max-width: 991px) {
 
+    .boxmargintopfirst {
+        margin-top: 110px;
+    }
+        .boxmargintop {
+        margin-top: 150px;
+    }
+}
 #qbootstrap-countdown .section-heading {
     width: 50%;
 }
