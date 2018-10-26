@@ -1906,7 +1906,7 @@ select option {
     }
 
     .social li a:hover {
-        background: #393e46 !important;
+        /*background: #393e46 !important;*/
     }
 
 .social.social-box a {
@@ -2009,7 +2009,7 @@ select option {
     margin-bottom: 60px;
 }
 
-#rsvp .form-group label {
+#rsvp .form-group label, .number-color {
     color: white;
 }
 
@@ -2018,11 +2018,12 @@ select option {
         height: 513px;
     }
 
+}
+@media screen and (min-width: 1000px) {
     .col-md-4 .wedding-events .desc {
         height: 443px;
     }
 }
-
 @media screen and (max-width: 480px) {
     .boxmargintop {
         margin-top: 150px;
@@ -2044,7 +2045,16 @@ select option {
     width: 50%;
 }
 
-
+@media screen and (max-width: 991px) {
+    #qbootstrap-testimonials .box-testimony {
+        padding-left: 25px;
+    }
+}
+@media screen and (max-width: 678px) {
+    #qbootstrap-testimonials .box-testimony {
+        padding-left: 10px;
+    }
+}
 /*@media screen and (max-width: 480px) {
     #qbootstrap-slider-hero {
         height: auto;
