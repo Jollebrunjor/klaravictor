@@ -318,21 +318,22 @@ function toggleBounce() {
 		$('.player').mb_YTPlayer();
 	};
 
-	$(document).ready(function () {
-	    $('.radio-inline').click(function () {
-	            var attendingValue = document.querySelector('input[name="Attending"]:checked').value;
-	            if (attendingValue === "False") {
-	                document.getElementById("Email").required = false;
-	                document.getElementById("Email").disabled = true;
-	                document.getElementById("description").required = false;
-	                document.getElementById("description").disabled = true;
-	                document.getElementById("Accommondation").required = false;
-	                document.getElementById("Accommondation").disabled = true;
-	                document.getElementById("NumberOfNights").required = false;
-	                document.getElementById("NumberOfNights").disabled = true;
-	            }
-	    });
-	});
+	//$(document).ready(function () {
+	//    $('.radio-inline').click(function () {
+	//            var attendingValue = document.querySelector('input[name="Attending"]:checked').value;
+	//            if (attendingValue === "False") {
+	//                document.getElementById("Email").required = false;
+	//                document.getElementById("Email").disabled = true;
+	//                document.getElementById("description").required = false;
+	//                document.getElementById("description").disabled = true;
+	//                document.getElementById("Accommondation").required = false;
+	//                document.getElementById("Accommondation").disabled = true;
+	//                document.getElementById("NumberOfNights").required = false;
+	//                document.getElementById("NumberOfNights").disabled = true;
+	//            }
+	//    });
+    //});
+
     // Document on load.
 	$(function(){
 
