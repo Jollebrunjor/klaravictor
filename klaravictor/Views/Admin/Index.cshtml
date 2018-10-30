@@ -5,38 +5,58 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
 </head>
 <body>
-<table class="table table-striped">
-    <thead>
-    <tr>
-        <th>Namn</th>
-        <th>E-post</th>
-        <th>Kommer</th>
-        <th>Matinfo</th>
-        <th>Boende</th>
-        <th>Antal nätter</th>
-        <th>Kommentar</th>
-    </tr>
-    </thead>
-    @foreach (var m in Model)
+    @if (Model != null)
     {
-        <tbody>
-        <tr>
-            <td>@m.Name</td>
-            <td>@m.Email</td>
-            <td>@m.Attending</td>
-            <td>@m.FoodInfo</td>
-            <td>@m.Accommondation</td>
-            <td>@m.NumberOfNights</td>
-            <td>@m.Comment</td>
-        </tr>
-        </tbody>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Namn</th>
+                    <th>E-post</th>
+                    <th>Kommer</th>
+                    <th>Matinfo</th>
+                    <th>Boende</th>
+                    <th>Antal nätter</th>
+                    <th>Kommentar</th>
+                </tr>
+            </thead>
+            @foreach (var m in Model)
+            {
+                <tbody>
+                    <tr>
+                        <td>@m.Name</td>
+                        <td>@m.Email</td>
+                        <td>@m.Attending</td>
+                        <td>@m.FoodInfo</td>
+                        <td>@m.Accommondation</td>
+                        <td>@m.NumberOfNights</td>
+                        <td>@m.Comment</td>
+                    </tr>
+                </tbody>
+            }
+        </table>
     }
-</table>
     <div>
     </div>
+
+    @if (Model == null)
+    {
+        <h2>Logga in</h2>
+        using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+         {
+             <input type="text" id="username" name="UserName" /><br />
+             <input type="text" id="password" name="Password" />
+             <input type="submit" id="btn1" value="Logga in" />
+         }
+    }
+
+<script src="~/js/main.js"></script>
 </body>
 </html>
