@@ -1880,12 +1880,12 @@ select option {
 @media screen and (min-width: 1024px) {
     .leftitem {
         /*padding-right: 50px;*/
-            float: left;
+        float: left;
     }
 
     .rightitem {
         /*padding-left: 50px;*/
-            float: right;
+        float: right;
     }
 }
 
@@ -2078,9 +2078,36 @@ select option {
         padding-left: 10px;
     }
 }
+
 @media screen and (max-width: 1199px) and (min-width: 992px) {
     .right-toastmaster {
         padding-top: 32px;
+    }
+}
+
+.first-hero-image {
+    background-image: url('../images/klaravictor1.png');
+}
+
+.second-hero-image {
+    background-image: url('../images/IMG_0211.jpg');
+}
+
+.third-hero-image {
+    background-image: url('../images/IMG_8243.jpg');
+}
+
+@media screen and (max-width: 480px) {
+    .first-hero-image {
+        background-image: url('../images/klaravictor1-mobile.png');
+    }
+
+    .second-hero-image {
+        background-image: url('../images/IMG_0211-mobile.jpg');
+    }
+
+    .third-hero-image {
+        background-image: url('../images/IMG_8243-mobile.jpg');
     }
 }
 /*@media screen and (max-width: 480px) {
