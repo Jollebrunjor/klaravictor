@@ -346,6 +346,7 @@ footer .social h2 {
 #qbootstrap-groom-bride {
     padding: 5em 0;
 }
+
 #qbootstrap-started {
     padding: 3em 0;
     padding-bottom: 6em;
@@ -1863,15 +1864,31 @@ select option {
         margin: 0;
         display: inline-block;
     }
+
 @media screen and (min-width: 550px) {
     .leftitem {
-        padding-right: 50px;
+        /*padding-right: 50px;*/
+        float: left;
     }
 
     .rightitem {
-        padding-left: 50px;
+        /*padding-left: 50px;*/
+        float: right;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .leftitem {
+        /*padding-right: 50px;*/
+            float: left;
+    }
+
+    .rightitem {
+        /*padding-left: 50px;*/
+            float: right;
+    }
+}
+
 .social li a {
     font-size: 16px;
     /*display: table;*/
@@ -2017,30 +2034,35 @@ select option {
     .col-md-6 .wedding-events .desc {
         height: 513px;
     }
-
 }
+
 @media screen and (min-width: 1000px) {
     .col-md-4 .wedding-events .desc {
         height: 443px;
     }
 }
+
 @media screen and (max-width: 480px) {
     .boxmargintop {
         margin-top: 150px;
     }
+
     .mobile-padding {
         padding-top: 50px;
+    }
 }
-}
+
 @media screen and (max-width: 991px) {
 
     .boxmargintopfirst {
         margin-top: 110px;
     }
-        .boxmargintop {
+
+    .boxmargintop {
         margin-top: 150px;
     }
 }
+
 #qbootstrap-countdown .section-heading {
     width: 50%;
 }
@@ -2050,9 +2072,15 @@ select option {
         padding-left: 25px;
     }
 }
+
 @media screen and (max-width: 678px) {
     #qbootstrap-testimonials .box-testimony {
         padding-left: 10px;
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .right-toastmaster {
+        padding-top: 32px;
     }
 }
 /*@media screen and (max-width: 480px) {
