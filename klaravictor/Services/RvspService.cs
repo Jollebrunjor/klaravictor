@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Net;
-using System.Net.Mail;
 using klaravictor.Extensions;
 using klaravictor.Models;
 

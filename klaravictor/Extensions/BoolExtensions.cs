@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace klaravictor.Extensions
+﻿namespace klaravictor.Extensions
 {
     public static class BoolExtensions
     {
