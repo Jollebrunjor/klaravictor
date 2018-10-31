@@ -1,4 +1,4 @@
-﻿@model System.Data.Entity.DbSet<klaravictor.Models.RvspModel>
+﻿@model IList<klaravictor.Models.ExcelModel>
 <html>
 <head>
     <title>Admin</title>
@@ -21,9 +21,9 @@
                     <th>Namn</th>
                     <th>E-post</th>
                     <th>Kommer</th>
-                    <th>Matinfo</th>
-                    <th>Boende</th>
                     <th>Antal nätter</th>
+                    <th>Boende</th>
+                    <th>Matinfo</th>
                     <th>Kommentar</th>
                 </tr>
             </thead>
@@ -31,17 +31,21 @@
             {
                 <tbody>
                     <tr>
-                        <td>@m.Name</td>
+                        <td>@m.Namn</td>
                         <td>@m.Email</td>
-                        <td>@m.Attending</td>
-                        <td>@m.FoodInfo</td>
-                        <td>@m.Accommondation</td>
-                        <td>@m.NumberOfNights</td>
-                        <td>@m.Comment</td>
+                        <td>@m.Kommer</td>
+                        <td>@m.AntalNätter</td>
+                        <td>@m.Boende</td>
+                        <td>@m.MatInfo</td>
+                        <td>@m.Kommentar</td>
                     </tr>
                 </tbody>
             }
         </table>
+        using (Html.BeginForm("ExportToExcel", "Admin", FormMethod.Post))
+         {
+             <input type="submit" value="Exportera till Excel"/>
+         }
     }
     <div>
     </div>
@@ -50,13 +54,13 @@
     {
         <h2>Logga in</h2>
         using (Html.BeginForm("Login", "Admin", FormMethod.Post))
-         {
-             <input type="text" id="username" name="UserName" /><br />
-             <input type="text" id="password" name="Password" />
-             <input type="submit" id="btn1" value="Logga in" />
-         }
+        {
+            <input type="text" id="username" name="UserName" /><br />
+            <input type="text" id="password" name="Password" />
+            <input type="submit" id="btn1" value="Logga in" />
+        }
     }
 
-<script src="~/js/main.js"></script>
+    <script src="~/js/main.js"></script>
 </body>
 </html>

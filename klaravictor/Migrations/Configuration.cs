@@ -11,7 +11,7 @@ namespace klaravictor.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            //Database.SetInitializer(new DropCreateDatabaseAlways<DataModel>());
+            Database.SetInitializer(new DropCreateDatabaseAlways<DataModel>());
         }
 
         protected override void Seed(DataModel context)

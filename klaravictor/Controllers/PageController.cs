@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using klaravictor.Models;
 using klaravictor.Services;
 
@@ -31,7 +26,6 @@ namespace klaravictor.Controllers
             TempData["rvsp"] = $"Vad kul att du kommer {rvsp.Name}! Vi har skickat en bekräftelse till din mail: {rvsp.Email}. Heja Giffarna!";
 
             return new RedirectResult(Url.Action("Index") + "#rvsp");
-
         }
     }
 }

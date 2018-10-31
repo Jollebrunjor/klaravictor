@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Net;
-using System.Net.Mail;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 

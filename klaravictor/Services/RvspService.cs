@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using klaravictor.Extensions;
 using klaravictor.Models;
 
 namespace klaravictor.Services
@@ -48,7 +50,7 @@ namespace klaravictor.Services
             {
                 return false;
             }
-            
+           
             return true;
         }
 
@@ -57,6 +59,24 @@ namespace klaravictor.Services
             return _db.RvspResponses;
         }
 
-
+        public IList<ExcelModel> ModifiedRvsp()
+        {
+            var excelList = new List<ExcelModel>();
+            foreach (RvspModel r in _db.RvspResponses)
+            {
+                var model = new ExcelModel()
+                {
+                    Namn = r.Name,
+                    Email = r.Email,
+                    Kommer = r.Attending.ToSwedish(),
+                    Boende = r.Accommondation,
+                    AntalNätter = r.NumberOfNights,
+                    Kommentar = r.Comment,
+                    MatInfo = r.FoodInfo
+                };
+                excelList.Add(model);
+            }
+            return excelList;
+        }
     }
 }
