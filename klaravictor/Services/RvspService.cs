@@ -30,7 +30,7 @@ namespace klaravictor.Services
             {
                 return false;
             }
-            _smtp.SendMail(rvsp.Email, rvsp.Name);
+            _smtp.SendMail(rvsp);
             return true;
 
         }

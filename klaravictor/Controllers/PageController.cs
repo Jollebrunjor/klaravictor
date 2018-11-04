@@ -23,7 +23,7 @@ namespace klaravictor.Controllers
                 return new RedirectResult(Url.Action("Index") + "#rvsp");
             }
 
-            TempData["rvsp"] = $"Vad kul att du kommer {rvsp.Name}! Vi har skickat en bekräftelse till din mail: {rvsp.Email}. Heja Giffarna!";
+            TempData["rvsp"] = $"Bra jobbat! Ett bekräftelsemail skickas till {rvsp.Email}.";
 
             return new RedirectResult(Url.Action("Index") + "#rvsp");
         }

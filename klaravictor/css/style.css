@@ -47,7 +47,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     color: #000;
-    font-family: "Clicker Script", cursive;
+    font-family: "Tangerine", sans-serif;
     font-weight: 400;
 }
 
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 34px;
     padding-left: 0;
     color: #fff;
-    font-family: "Clicker Script", cursive;
+    font-family: "Tangerine", cursive;
 }
 
 #qbootstrap-header.navbar-fixed-top {
@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 footer .social h2 {
-    font-family: "Clicker Script";
+    font-family: "Tangerine";
     font-size: 70px;
     color: #245632;
     padding-bottom: 0;
@@ -739,7 +739,7 @@ footer .social h2 {
 
 #qbootstrap-couple h3 {
     font-size: 34px;
-    font-family: "Clicker Script", cursive;
+    font-family: "Tangerine", cursive;
     color: #245632;
 }
 
@@ -865,7 +865,7 @@ footer .social h2 {
     #qbootstrap-countdown .countdown span {
         margin: 0 30px;
         display: inline-block;
-        font-family: "Clicker Script", cursive;
+        font-family: "Tangerine", cursive;
     }
 
     #qbootstrap-countdown .countdown small {
@@ -1295,7 +1295,7 @@ footer .social h2 {
         position: relative;
         padding: 0;
         font-size: 30px;
-        font-family: "Clicker Script", cursive;
+        font-family: "Tangerine", cursive;
         font-style: italic;
     }
 
@@ -1348,7 +1348,7 @@ footer .social h2 {
 }
 
 .groom-men h3 {
-    font-family: "Clicker Script", cursive;
+    font-family: "Tangerine", cursive;
     font-size: 28px;
 }
 
