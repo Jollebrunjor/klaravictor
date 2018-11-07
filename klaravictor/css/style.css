@@ -2086,7 +2086,7 @@ select option {
 }
 
 .first-hero-image {
-    background-image: url('../images/klaravictor1.png');
+    background-image: url('../images/klaravictor1.jpg');
 }
 
 .second-hero-image {
@@ -2099,7 +2099,7 @@ select option {
 
 @media screen and (max-width: 480px) {
     .first-hero-image {
-        background-image: url('../images/klaravictor1-mobile.png');
+        background-image: url('../images/klaravictor1-mobile.jpg');
     }
 
     .second-hero-image {
