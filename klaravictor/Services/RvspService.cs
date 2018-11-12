@@ -21,6 +21,14 @@ namespace klaravictor.Services
         {
             if (rvsp == null) return false;
 
+            if (rvsp.Attending == false)
+            {
+                rvsp.Comment = " - ";
+                rvsp.FoodInfo = " - ";
+                rvsp.Accommondation = " - ";
+                rvsp.NumberOfNights = " - ";
+            }
+
             try
             {
                 _db.RvspResponses.Add(rvsp);
