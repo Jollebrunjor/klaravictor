@@ -289,6 +289,7 @@
     <Content Include="fonts\simple-line-icons\Simple-Line-Icons.ttf" />
     <Content Include="fonts\simple-line-icons\Simple-Line-Icons.woff" />
     <Content Include="fonts\simple-line-icons\Simple-Line-Icons.woff2" />
+    <Content Include="fonts\AutumnInNovember.ttf" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\_RvspPartial.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
