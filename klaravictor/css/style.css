@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .section-heading h2, footer .social h2 {
-        font-size: 80px;
+        font-size: 75px;
         color: #245632;
         display: block;
         padding-bottom: 20px;
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 footer .social h2 {
     font-family: "AutumnInNovember";
-    font-size: 70px;
+    font-size: 60px;
     color: #245632;
     padding-bottom: 0;
     display: block;
@@ -311,7 +311,7 @@ footer .social h2 {
 
 @media screen and (max-width: 768px) {
     .section-heading h2 {
-        font-size: 50px;
+        font-size: 44px;
     }
 }
 
@@ -375,7 +375,7 @@ footer .social h2 {
     #qbootstrap-gallery,
     #qbootstrap-testimonials,
     #qbootstrap-press {
-        padding: 1em 0;
+        padding: 2em 0;
     }
 
     #qbootstrap-started {
@@ -530,7 +530,7 @@ footer .social h2 {
 @media screen and (max-width: 768px) {
     .qbootstrap-cover .display-tc h2,
     .video-hero .display-tc h2 {
-        font-size: 60px;
+        font-size: 44px;
     }
 }
 
@@ -803,7 +803,7 @@ footer .social h2 {
 
 @media screen and (max-width: 768px) {
     #qbootstrap-countdown .section-heading h2, #qbootstrap-countdown2 .section-heading h2, #qbootstrap-wishlist .section-heading h2, footer .social h2 {
-        font-size: 50px;
+        font-size: 44px;
     }
 }
 
@@ -863,6 +863,7 @@ footer .social h2 {
 
 #qbootstrap-countdown .countdown {
     margin-bottom: 0;
+    margin-top: 15px;
     font-size: 70px;
     color: #fff;
 }
@@ -941,7 +942,7 @@ footer .social h2 {
 
         .couple .desc h2, .social-circle h2 {
             color: #245632;
-            font-size: 40px;
+            font-size: 30px;
             margin-bottom: 30px;
         }
 
@@ -1196,7 +1197,7 @@ footer .social h2 {
 
 @media screen and (max-width: 768px) {
     #qbootstrap-testimonials .section-heading h2 {
-        font-size: 50px;
+        font-size: 44px;
     }
 }
 
@@ -1394,7 +1395,7 @@ footer .social h2 {
     }
 
     .wedding-events .desc h3 {
-        font-size: 40px;
+        font-size: 30px;
         color: #245632;
         display: block;
         margin-bottom: 40px;
@@ -1455,7 +1456,7 @@ footer .social h2 {
 
 @media screen and (max-width: 768px) {
     #qbootstrap-started .section-heading h2 {
-        font-size: 30px;
+        font-size: 44px;
     }
 }
 
